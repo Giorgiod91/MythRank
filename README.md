@@ -6,12 +6,12 @@
 
 # What Sets MythRank Apart
 
--- Damage output (DPS)
--- Interrupt usafe
--- Crowd control(CC) effectivness
--- Defensuve cooldown usage
--- potion usage
--- Deaths and avoidable damage taken
+- Damage output (DPS)
+- Interrupt usage
+- Crowd control(CC) effectivness
+- Defensuve cooldown usage
+- potion usage
+- Deaths and avoidable damage taken
 
 - These performance factors are weighted and combined to create a comprehensive score that truly reflects the player's contribution to the run. This means that even if a player does not have the highest dungeon clear, they can still rank highly based on their individual performance.
 
