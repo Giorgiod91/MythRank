@@ -47,7 +47,7 @@ def retrive_headers()->dict[str, str]:
     else:
         return {}
 
-# query to fetch from wclogs API
+# querys to fetch from wclogs API
 query = """
 query($name: String, $serverSlug: String, $serverRegion: String) {
     characterData {
@@ -62,6 +62,10 @@ query($name: String, $serverSlug: String, $serverRegion: String) {
     }
 }
 """
+
+#query to get the logs connected with the player id
+query2 = """
+            """
 #function to get player from user input for now later will be automated or something 
 
 def get_player():
@@ -102,6 +106,25 @@ def save_player_id(player_data):
 
     except Exception as e:
         print(f"Error saving player ID: {e}")
+
+
+# get the logs from a player with player id those i need to train my model later
+
+def get_logs(id, query: str, variables: dict):
+    data = {"query": query2, "variables": variables}
+    with requests.Session() as session:
+        session.headers = retrive_headers()  
+        response = session.post(publicAPI, json=data)
+        return response.json()
+    
+# function to save the logs in a seperate file for my training model
+
+
+
+        
+
+
+
 
 
 def main():
