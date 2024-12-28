@@ -112,18 +112,3 @@ print(result)
 
 
 
-def get_player_Score(id, score):
-    if score <= 500:
-        return score_range["0-500"]
-    elif score <= 1000:
-        return score_range["501-1000"]
-    elif score <= 1500:
-        return score_range["1001-1500"]
-    elif score <= 2000:
-        return score_range["1501-2000"]
-    elif score <= 2500:
-        return score_range["2001-2500"]
-    elif score <= 3000:
-        return score_range["2501-3000"]
-    else:
-        return score_range["3001+"]
